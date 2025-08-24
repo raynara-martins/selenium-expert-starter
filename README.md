@@ -4,7 +4,6 @@
 ![TestNG](https://img.shields.io/badge/tests-TestNG-green)
 
 Alvo: https://www.saucedemo.com/
-Credenciais de exemplo: `standard_user` / `secret_sauce`
 
 ## Rodar local
 ```bash
