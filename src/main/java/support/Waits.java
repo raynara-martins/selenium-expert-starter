@@ -15,14 +15,17 @@ public class Waits {
     }
 
     public WebElement clickable(By locator) {
+
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
     public WebElement visible(By locator) {
+
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
     public boolean urlContains(String fragment) {
+
         return wait.until(ExpectedConditions.urlContains(fragment));
     }
 }

@@ -10,6 +10,9 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- suite padrão: local (debug) -->
+        <suiteXml>testng-local.xml</suiteXml>
     </properties>
 
     <dependencies>
@@ -51,7 +54,7 @@
                 <version>3.2.5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>${suiteXml}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

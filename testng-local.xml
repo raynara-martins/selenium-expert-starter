@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="CI Suite" parallel="methods" thread-count="4">
-    <test name="All tests (parallel)">
+<suite name="Local Suite">
+    <test name="All tests (no parallel)">
         <classes>
             <class name="tests.LoginTest"/>
+            <!-- add outras classes conforme crescer -->
         </classes>
     </test>
 </suite>
