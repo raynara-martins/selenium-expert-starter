@@ -1,0 +1,29 @@
+# ------------------------
+# Maven
+# ------------------------
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.properties
+
+# ------------------------
+# IntelliJ IDEA
+# ------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ------------------------
+# Logs / relatórios temporários
+# ------------------------
+*.log
+*.tmp
+allure-results/
+allure-report/
+
+# ------------------------
+# Configs locais (não versionar!)
+# ------------------------
+src/test/resources/environments/local.properties
