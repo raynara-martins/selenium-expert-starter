@@ -73,7 +73,6 @@ Após rodar os testes:
 ```bash
 allure serve target/allure-results
 ```
-
 Isso abrirá os relatórios em modo interativo no navegador.
 
 ### Usando Docker 
@@ -83,5 +82,13 @@ docker run --rm -p 5050:5050 \
   -v "$(pwd)/allure-reports:/app/allure-reports" \
   frankescobar/allure-docker-service
 ```
+### Usando Docker Compose
+
+Se preferir, basta usar o `docker-compose.yml` já configurado no projeto:
+
+```bash
+docker compose up
+```
+
 Acesse:
 [http://localhost:5050/allure-docker-service/projects/default/reports/latest/index.html](http://localhost:5050/allure-docker-service/projects/default/reports/latest/index.html)

@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  allure:
+    image: frankescobar/allure-docker-service
+    container_name: allure-service
+    ports:
+      - "5050:5050"
+    environment:
+      CHECK_RESULTS_EVERY_SECONDS: 2
+    volumes:
+      - ./target/allure-results:/app/allure-results
+      - ./allure-reports:/app/allure-reports
