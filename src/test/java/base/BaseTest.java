@@ -9,8 +9,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
 @Listeners({
-        io.qameta.allure.testng.AllureTestNg.class,  // habilita o Allure
-        ScreenshotListener.class                     // seu listener de prints
+        io.qameta.allure.testng.AllureTestNg.class,
+        listeners.ScreenshotListener.class
 })
 public class BaseTest {
     protected WebDriver driver;
