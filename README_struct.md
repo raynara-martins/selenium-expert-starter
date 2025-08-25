@@ -6,7 +6,7 @@ Quando você roda `mvn test`:
 1. **TestNG** lê o `testng.xml`, descobre os testes.  
 2. `BaseTest.setUp()` cria o **WebDriver** via `DriverManager` (um driver por thread).  
 3. Os testes chamam **Page Objects (POM)** que encapsulam os seletores e ações.  
-4. As ações usam **Waits** (esperas explícitas) → testes mais estáveis.  
+4. As ações usam **Waits** (esperas explícitas)  
 5. Se falhar, o **ScreenshotListener** gera **screenshot** + evidência (Allure).  
 6. `BaseTest.tearDown()` fecha o driver.  
 
