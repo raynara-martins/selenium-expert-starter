@@ -102,6 +102,8 @@ O workflow está em **`.github/workflows/ui-tests.yml`** e **roda automaticament
 3. **Falhas quebram o job** automaticamente (o `mvn test` retorna exit code ≠ 0).
     - Em PR: o _check_ fica vermelho e o PR não passa.
     - Em push direto na branch: o status do workflow fica `failed`.
+    - ![Allure Report Preview](./docs/CI_github.png)
+
 4. **Artefatos de relatório** são enviados sempre (`if: always()`):
     - `target/surefire-reports/**`
     - `target/allure-results/**`
@@ -112,7 +114,6 @@ O workflow está em **`.github/workflows/ui-tests.yml`** e **roda automaticament
   ```bash
   allure serve path/para/os/allure-results
   ```
-
 
 ## 7. Resumo do Fluxo
 
