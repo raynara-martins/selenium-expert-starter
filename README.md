@@ -66,8 +66,9 @@ mvn -q clean test -DsuiteXml=testng.xml -Dheadless=true
 
 ---
 
-## Relatórios Allure (opcional)
+## Relatórios Allure
 
+### Usando Allure CLI (instalado na máquina)
 Após rodar os testes:
 ```bash
 allure serve target/allure-results
@@ -75,4 +76,13 @@ allure serve target/allure-results
 
 Isso abrirá os relatórios em modo interativo no navegador.
 
----
+### Usando Docker 
+```bash
+docker run --rm -p 5050:5050 \
+  -v "$(pwd)/target/allure-results:/app/allure-results" \
+  -v "$(pwd)/allure-reports:/app/allure-reports" \
+  frankescobar/allure-docker-service
+```
+
+Acesse:
+[http://localhost:5050/allure-docker-service/projects/default/reports/latest/index.html](http://localhost:5050/allure-docker-service/projects/default/reports/latest/index.html)
