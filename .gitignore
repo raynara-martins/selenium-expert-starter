@@ -22,8 +22,14 @@ out/
 *.tmp
 allure-results/
 allure-report/
+allure-reports/
 
 # ------------------------
 # Configs locais (não versionar!)
 # ------------------------
 src/test/resources/environments/local.properties
+
+# ------------------------
+# VS Code (caso use também)
+# ------------------------
+.vscode/

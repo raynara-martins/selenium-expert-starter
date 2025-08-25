@@ -8,7 +8,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
-@Listeners({ScreenshotListener.class})
+@Listeners({
+        io.qameta.allure.testng.AllureTestNg.class,  // habilita o Allure
+        ScreenshotListener.class                     // seu listener de prints
+})
 public class BaseTest {
     protected WebDriver driver;
 

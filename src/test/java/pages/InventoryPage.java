@@ -15,6 +15,7 @@ public class InventoryPage {
     }
 
     public String appTitle() {
+
         return waits.visible(title).getText();
     }
 }
