@@ -83,6 +83,5 @@ docker run --rm -p 5050:5050 \
   -v "$(pwd)/allure-reports:/app/allure-reports" \
   frankescobar/allure-docker-service
 ```
-
 Acesse:
 [http://localhost:5050/allure-docker-service/projects/default/reports/latest/index.html](http://localhost:5050/allure-docker-service/projects/default/reports/latest/index.html)
