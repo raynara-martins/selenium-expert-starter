@@ -53,7 +53,7 @@ public class LoginTest extends BaseTest {
         });
     }
 
-    @Test
+    @Test(enabled = false)
     @Description("Forçar falha para validar screenshot e anexos no Allure")
     public void falhaProposital() {
 
