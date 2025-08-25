@@ -114,7 +114,6 @@ O workflow está em **`.github/workflows/ui-tests.yml`** e **roda automaticament
   ```bash
   allure serve path/para/os/allure-results
   ```
-
 ## 7. Resumo do Fluxo
 
 - **Execução automática no push/PR**
